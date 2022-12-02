@@ -7,7 +7,7 @@ fn main() {
         // create groups, breaking each time an empty string is observed
         .group_by(|v| { *v != "" })
         .into_iter()
-        // convert all the strings to i32s, skipping any that fail to parse (i.e. empty strings)
+        // convert all the strings to i32s, skipping any that fail to parse and them sum the group (i.e. empty strings)
         .map(|(_, g)| { g.filter_map(|s| s.parse::<i32>().ok()).sum::<i32>() })
         // sort the integers
         .sorted()
