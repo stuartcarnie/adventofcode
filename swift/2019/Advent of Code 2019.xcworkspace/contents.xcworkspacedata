@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Intcode2/../cli/adventofcode.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Volumes/Data/projects/adventofcode/swift/2019/Intcode2/Intcode.xcodeproj">
+   </FileRef>
+</Workspace>
