@@ -1,5 +1,5 @@
 use itertools::Itertools;
-use input::day01::INPUT;
+use input::DAY01_INPUT as INPUT;
 
 fn main() {
     let sums = INPUT

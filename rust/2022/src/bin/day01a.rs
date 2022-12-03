@@ -1,5 +1,5 @@
 use itertools::Itertools;
-use input::day01::INPUT;
+use input::DAY01_INPUT as INPUT;
 
 fn main() {
     let sums = INPUT
@@ -11,7 +11,6 @@ fn main() {
         .map(|(_, g)| { g.filter_map(|s| s.parse::<i32>().ok()).sum::<i32>() })
         // sort the integers
         .sorted()
-        // reverse their order
         .rev()
         // collect them into a vector
         .collect::<Vec<_>>();
